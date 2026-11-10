@@ -1,0 +1,10 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "groupings": [
+    {
+      "title": "Design & UI",
+      "description": "Spacing and layout audit skills.",
+      "skills": ["design-pressure-test"]
+    }
+  ]
+}

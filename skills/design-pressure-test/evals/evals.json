@@ -1,0 +1,73 @@
+{
+  "skill_name": "design-pressure-test",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "This landing page feels cramped. Can you run the design pressure test? The hero has 16px top padding, cards have 12px padding, and there's no gap between sections.",
+      "expected_output": "Should identify hero padding of 16px as critically insufficient. Should recommend minimum 80px top padding (pt-20). Should flag card padding of 12px as below minimum (p-3 instead of p-6+). Should note missing section gaps. Should output the full pressure test format with Summary Score, Critical Issues, Quick Wins, and Pixel Map. Should reference the 8pt grid system.",
+      "assertions": [
+        "Identifies hero padding as critically insufficient",
+        "Recommends 80px+ hero top padding",
+        "Flags card padding as below minimum",
+        "Notes missing section gaps",
+        "Outputs Summary Score",
+        "Outputs Critical Issues section",
+        "Outputs Quick Wins section",
+        "Outputs Pixel Map with token changes"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm building a pricing section with three tiers. Each card has the plan name, price, feature list, and a CTA button. What spacing should I use to make it look premium?",
+      "expected_output": "Should recommend 40-48px card padding (p-10 to p-12). Should suggest 32px gap between pricing cards (gap-8). Should recommend 32px between price and CTA (mt-8). Should suggest 12px between feature list items (gap-3). Should mention that generous card padding is strongly correlated with perceived value in pricing contexts.",
+      "assertions": [
+        "Recommends 40-48px card padding",
+        "Suggests 32px gap between cards",
+        "Recommends 32px between price and CTA",
+        "Suggests 12px gap between features",
+        "Links padding to perceived value"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Review this testimonial section. Each card has a star rating, quote text, and author name with photo. The cards currently have 20px padding.",
+      "expected_output": "Should identify 20px (p-5) as insufficient for testimonial cards. Should recommend 40-48px (p-10 to p-12) for premium feel. Should check star-to-quote spacing (recommend 12px mb-3), quote-to-author spacing (recommend 16px mb-4). Should suggest the gap between testimonial cards be 24-32px (gap-6 to gap-8).",
+      "assertions": [
+        "Identifies 20px padding as insufficient",
+        "Recommends 40-48px for testimonial cards",
+        "Checks internal spacing between elements",
+        "Suggests card grid gap",
+        "Provides specific token values"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "My form has 8px between fields and labels are 2px from inputs. How can I improve conversion through spacing?",
+      "expected_output": "Should recommend increasing field gap to 20-24px (space-y-5 to space-y-6). Should recommend 4px between label and input (mb-1). Should suggest 32px horizontal padding in inputs (px-8). Should note that dense forms increase cognitive load and reduce completion rates. Should reference form CRO principles.",
+      "assertions": [
+        "Recommends 20-24px field gap",
+        "Recommends 4px label-to-input gap",
+        "Suggests input inner padding",
+        "Links spacing to form completion rates",
+        "References CRO principles"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I need my landing page to feel more premium. It's a SaaS product with a hero, features grid, testimonials, and CTA. What spacing changes would have the biggest impact?",
+      "expected_output": "Should prioritize hero section padding as highest impact (pt-24 pb-16). Should recommend increasing all card padding to 32-40px. Should suggest section gaps of 80px (py-20). Should recommend premium-tier spacing for the CTA section (py-20). Should provide a prioritized list of changes starting with the hero. Should include specific token values.",
+      "assertions": [
+        "Prioritizes hero padding as highest impact",
+        "Recommends card padding increases",
+        "Suggests section gap standardization",
+        "Prioritizes changes by impact",
+        "Includes specific token values"
+      ],
+      "files": []
+    }
+  ]
+}
